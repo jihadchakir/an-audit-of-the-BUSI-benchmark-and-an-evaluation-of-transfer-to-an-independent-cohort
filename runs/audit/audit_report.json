@@ -1,0 +1,48 @@
+{
+  "n_images": 780,
+  "class_counts": {
+    "benign": 437,
+    "malignant": 210,
+    "normal": 133
+  },
+  "n_duplicate_groups": 608,
+  "n_images_in_multi_image_groups": 312,
+  "largest_group_size": 4,
+  "n_exact_pixel_duplicate_pairs": 1,
+  "n_near_duplicate_pairs": 207,
+  "n_pairs_with_label_conflict": 10,
+  "n_images_with_multiple_masks": 17,
+  "phash_threshold": 6,
+  "mask_artifact": {
+    "per_class": {
+      "benign": {
+        "n": 437,
+        "n_all_black_masks": 0,
+        "frac_all_black_masks": 0.0,
+        "mean_intensity_raw": 0.3378748862537421,
+        "mean_intensity_old_preprocessing": 0.11352434640782111,
+        "std_intensity_old_preprocessing": 0.03122634876495005
+      },
+      "malignant": {
+        "n": 210,
+        "n_all_black_masks": 0,
+        "frac_all_black_masks": 0.0,
+        "mean_intensity_raw": 0.3123802011566503,
+        "mean_intensity_old_preprocessing": 0.11755346510571375,
+        "std_intensity_old_preprocessing": 0.0313548343294975
+      },
+      "normal": {
+        "n": 133,
+        "n_all_black_masks": 133,
+        "frac_all_black_masks": 1.0,
+        "mean_intensity_raw": 0.31721646848477814,
+        "mean_intensity_old_preprocessing": 0.09516494356324456,
+        "std_intensity_old_preprocessing": 0.026983450540635646
+      }
+    },
+    "separability": {
+      "cohens_d_normal_vs_lesion_brightness": 0.6824330500430378,
+      "interpretation": "Effect size of a single scalar (global mean brightness) separating normal from lesion images under the OLD preprocessing. Values above ~2 mean the 'normal' class was trivially identifiable from an artefact of the ground-truth mask, not from the ultrasound content."
+    }
+  }
+}

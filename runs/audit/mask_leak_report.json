@@ -1,0 +1,63 @@
+{
+  "mask_facts": {
+    "n_with_mask": 780,
+    "n_all_black": 133,
+    "per_class_all_black": {
+      "normal": 133
+    }
+  },
+  "old_preprocessing": {
+    "balanced_accuracy": 0.8230612763793541,
+    "accuracy": 0.7705128205128206,
+    "confusion_matrix": [
+      [
+        307,
+        110,
+        20
+      ],
+      [
+        48,
+        161,
+        1
+      ],
+      [
+        0,
+        0,
+        133
+      ]
+    ],
+    "per_class_recall": {
+      "0": 0.7025171624713958,
+      "1": 0.7666666666666667,
+      "2": 1.0
+    }
+  },
+  "new_preprocessing": {
+    "balanced_accuracy": 0.5888634630053394,
+    "accuracy": 0.5474358974358975,
+    "confusion_matrix": [
+      [
+        197,
+        114,
+        126
+      ],
+      [
+        41,
+        150,
+        19
+      ],
+      [
+        39,
+        14,
+        80
+      ]
+    ],
+    "per_class_recall": {
+      "0": 0.45080091533180777,
+      "1": 0.7142857142857143,
+      "2": 0.6015037593984962
+    }
+  },
+  "gap_balanced_accuracy": 0.23419781337401469,
+  "chance": 0.3333333333333333
+}

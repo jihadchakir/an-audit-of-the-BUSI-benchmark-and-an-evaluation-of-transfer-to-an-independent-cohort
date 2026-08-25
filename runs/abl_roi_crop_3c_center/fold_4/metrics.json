@@ -1,0 +1,444 @@
+{
+  "fold": 4,
+  "sizes": {
+    "train": 488,
+    "val": 122,
+    "test": 152
+  },
+  "encoder": {
+    "best_epoch": 18,
+    "best_val_balanced_accuracy": 0.8932669082125604,
+    "saturation_epoch": null,
+    "final_frac_active_triplets": 0.7250000208616256,
+    "min_frac_active_triplets": 0.6875000268220901
+  },
+  "decision": {
+    "rule": "argmax",
+    "malignant_index": 1,
+    "tau": 1.0,
+    "abstain_below": 0.7376511194799171,
+    "chosen_on": "inner_val",
+    "target_sensitivity": null,
+    "achieved_val_sensitivity": null,
+    "achieved_val_specificity": null,
+    "achieved_val_coverage": 0.8934426229508197
+  },
+  "feature_width": 275,
+  "val": {
+    "n": 122,
+    "coverage": 0.8934426229508197,
+    "n_answered": 109,
+    "accuracy": 0.9174311926605505,
+    "balanced_accuracy": 0.9041269841269841,
+    "macro_f1": 0.912914398812469,
+    "confusion_matrix": [
+      [
+        60,
+        3,
+        0
+      ],
+      [
+        6,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        21
+      ]
+    ],
+    "malignant": {
+      "sensitivity": 0.76,
+      "specificity": 0.9642857142857143,
+      "ppv": 0.8636363636363636,
+      "npv": 0.9310344827586207,
+      "tp": 19,
+      "fp": 3,
+      "tn": 81,
+      "fn": 6
+    },
+    "per_class": {
+      "benign": {
+        "sensitivity": 0.9523809523809523,
+        "specificity": 0.8695652173913043,
+        "ppv": 0.9090909090909091,
+        "npv": 0.9302325581395349,
+        "tp": 60,
+        "fp": 6,
+        "tn": 40,
+        "fn": 3
+      },
+      "malignant": {
+        "sensitivity": 0.76,
+        "specificity": 0.9642857142857143,
+        "ppv": 0.8636363636363636,
+        "npv": 0.9310344827586207,
+        "tp": 19,
+        "fp": 3,
+        "tn": 81,
+        "fn": 6
+      },
+      "normal": {
+        "sensitivity": 1.0,
+        "specificity": 1.0,
+        "ppv": 1.0,
+        "npv": 1.0,
+        "tp": 21,
+        "fp": 0,
+        "tn": 88,
+        "fn": 0
+      }
+    },
+    "auroc_ovr_macro": 0.9651932746938899,
+    "malignant_auroc": 0.9409722222222222,
+    "malignant_auprc": 0.8611289945495625,
+    "malignant_brier": 0.08826541872259884,
+    "ece": 0.030052557492865232,
+    "brier_multiclass": 0.17792356342680476
+  },
+  "test": {
+    "n": 152,
+    "coverage": 0.9539473684210527,
+    "n_answered": 145,
+    "accuracy": 0.9241379310344827,
+    "balanced_accuracy": 0.9296073181615351,
+    "macro_f1": 0.9231785776386715,
+    "confusion_matrix": [
+      [
+        77,
+        4,
+        2
+      ],
+      [
+        5,
+        31,
+        0
+      ],
+      [
+        0,
+        0,
+        26
+      ]
+    ],
+    "malignant": {
+      "sensitivity": 0.8611111111111112,
+      "specificity": 0.963302752293578,
+      "ppv": 0.8857142857142857,
+      "npv": 0.9545454545454546,
+      "tp": 31,
+      "fp": 4,
+      "tn": 105,
+      "fn": 5
+    },
+    "per_class": {
+      "benign": {
+        "sensitivity": 0.927710843373494,
+        "specificity": 0.9193548387096774,
+        "ppv": 0.9390243902439024,
+        "npv": 0.9047619047619048,
+        "tp": 77,
+        "fp": 5,
+        "tn": 57,
+        "fn": 6
+      },
+      "malignant": {
+        "sensitivity": 0.8611111111111112,
+        "specificity": 0.963302752293578,
+        "ppv": 0.8857142857142857,
+        "npv": 0.9545454545454546,
+        "tp": 31,
+        "fp": 4,
+        "tn": 105,
+        "fn": 5
+      },
+      "normal": {
+        "sensitivity": 1.0,
+        "specificity": 0.9831932773109243,
+        "ppv": 0.9285714285714286,
+        "npv": 1.0,
+        "tp": 26,
+        "fp": 2,
+        "tn": 117,
+        "fn": 0
+      }
+    },
+    "auroc_ovr_macro": 0.9710559228364749,
+    "malignant_auroc": 0.958470665787739,
+    "malignant_auprc": 0.9102311149704327,
+    "malignant_brier": 0.06268910400508329,
+    "ece": 0.021193579745216316,
+    "brier_multiclass": 0.14852681232810458,
+    "ci": {
+      "accuracy": {
+        "point": 0.9241379310344827,
+        "lo": 0.8766233766233766,
+        "hi": 0.9666721854304635,
+        "n_boot": 2000,
+        "unit": "cluster",
+        "n_clusters": 113
+      },
+      "balanced_accuracy": {
+        "point": 0.9296073181615351,
+        "lo": 0.882176473355846,
+        "hi": 0.9736853438505826,
+        "n_boot": 2000,
+        "unit": "cluster",
+        "n_clusters": 113
+      },
+      "macro_f1": {
+        "point": 0.9231785776386715,
+        "lo": 0.8760941013623491,
+        "hi": 0.9672574379111323,
+        "n_boot": 2000,
+        "unit": "cluster",
+        "n_clusters": 113
+      },
+      "malignant_sensitivity": {
+        "point": 0.8611111111111112,
+        "lo": 0.7222222222222222,
+        "hi": 0.972972972972973,
+        "n_boot": 2000,
+        "unit": "cluster",
+        "n_clusters": 113
+      },
+      "malignant_specificity": {
+        "point": 0.963302752293578,
+        "lo": 0.9255244581427718,
+        "hi": 0.9917355371900827,
+        "n_boot": 2000,
+        "unit": "cluster",
+        "n_clusters": 113
+      },
+      "malignant_ppv": {
+        "point": 0.8857142857142857,
+        "lo": 0.7894736842105263,
+        "hi": 0.9722222222222222,
+        "n_boot": 2000,
+        "unit": "cluster",
+        "n_clusters": 113
+      }
+    }
+  },
+  "test_per_member": {
+    "prototype": {
+      "n": 152,
+      "coverage": 1.0,
+      "n_answered": 152,
+      "accuracy": 0.9210526315789473,
+      "balanced_accuracy": 0.9276901004304161,
+      "macro_f1": 0.9224582425562818,
+      "confusion_matrix": [
+        [
+          79,
+          4,
+          2
+        ],
+        [
+          6,
+          35,
+          0
+        ],
+        [
+          0,
+          0,
+          26
+        ]
+      ],
+      "malignant": {
+        "sensitivity": 0.8536585365853658,
+        "specificity": 0.963963963963964,
+        "ppv": 0.8974358974358975,
+        "npv": 0.9469026548672567,
+        "tp": 35,
+        "fp": 4,
+        "tn": 107,
+        "fn": 6
+      },
+      "per_class": {
+        "benign": {
+          "sensitivity": 0.9294117647058824,
+          "specificity": 0.9104477611940298,
+          "ppv": 0.9294117647058824,
+          "npv": 0.9104477611940298,
+          "tp": 79,
+          "fp": 6,
+          "tn": 61,
+          "fn": 6
+        },
+        "malignant": {
+          "sensitivity": 0.8536585365853658,
+          "specificity": 0.963963963963964,
+          "ppv": 0.8974358974358975,
+          "npv": 0.9469026548672567,
+          "tp": 35,
+          "fp": 4,
+          "tn": 107,
+          "fn": 6
+        },
+        "normal": {
+          "sensitivity": 1.0,
+          "specificity": 0.9841269841269841,
+          "ppv": 0.9285714285714286,
+          "npv": 1.0,
+          "tp": 26,
+          "fp": 2,
+          "tn": 124,
+          "fn": 0
+        }
+      },
+      "auroc_ovr_macro": 0.96951844240223,
+      "malignant_auroc": 0.9556141507361019,
+      "malignant_auprc": 0.8848109613900882,
+      "malignant_brier": 0.06026498741252071,
+      "ece": 0.05219809000890689,
+      "brier_multiclass": 0.14499929531702316
+    },
+    "xgboost": {
+      "n": 152,
+      "coverage": 1.0,
+      "n_answered": 152,
+      "accuracy": 0.9013157894736842,
+      "balanced_accuracy": 0.9032998565279771,
+      "macro_f1": 0.9024755306065518,
+      "confusion_matrix": [
+        [
+          79,
+          4,
+          2
+        ],
+        [
+          9,
+          32,
+          0
+        ],
+        [
+          0,
+          0,
+          26
+        ]
+      ],
+      "malignant": {
+        "sensitivity": 0.7804878048780488,
+        "specificity": 0.963963963963964,
+        "ppv": 0.8888888888888888,
+        "npv": 0.9224137931034483,
+        "tp": 32,
+        "fp": 4,
+        "tn": 107,
+        "fn": 9
+      },
+      "per_class": {
+        "benign": {
+          "sensitivity": 0.9294117647058824,
+          "specificity": 0.8656716417910447,
+          "ppv": 0.8977272727272727,
+          "npv": 0.90625,
+          "tp": 79,
+          "fp": 9,
+          "tn": 58,
+          "fn": 6
+        },
+        "malignant": {
+          "sensitivity": 0.7804878048780488,
+          "specificity": 0.963963963963964,
+          "ppv": 0.8888888888888888,
+          "npv": 0.9224137931034483,
+          "tp": 32,
+          "fp": 4,
+          "tn": 107,
+          "fn": 9
+        },
+        "normal": {
+          "sensitivity": 1.0,
+          "specificity": 0.9841269841269841,
+          "ppv": 0.9285714285714286,
+          "npv": 1.0,
+          "tp": 26,
+          "fp": 2,
+          "tn": 124,
+          "fn": 0
+        }
+      },
+      "auroc_ovr_macro": 0.9667101129884058,
+      "malignant_auroc": 0.953197099538563,
+      "malignant_auprc": 0.9117731738875258,
+      "malignant_brier": 0.07274144936670346,
+      "ece": 0.015306056104716718,
+      "brier_multiclass": 0.16923359700211604
+    },
+    "random_forest": {
+      "n": 152,
+      "coverage": 1.0,
+      "n_answered": 152,
+      "accuracy": 0.9144736842105263,
+      "balanced_accuracy": 0.9195600191296031,
+      "macro_f1": 0.9158996882736612,
+      "confusion_matrix": [
+        [
+          79,
+          4,
+          2
+        ],
+        [
+          7,
+          34,
+          0
+        ],
+        [
+          0,
+          0,
+          26
+        ]
+      ],
+      "malignant": {
+        "sensitivity": 0.8292682926829268,
+        "specificity": 0.963963963963964,
+        "ppv": 0.8947368421052632,
+        "npv": 0.9385964912280702,
+        "tp": 34,
+        "fp": 4,
+        "tn": 107,
+        "fn": 7
+      },
+      "per_class": {
+        "benign": {
+          "sensitivity": 0.9294117647058824,
+          "specificity": 0.8955223880597015,
+          "ppv": 0.9186046511627907,
+          "npv": 0.9090909090909091,
+          "tp": 79,
+          "fp": 7,
+          "tn": 60,
+          "fn": 6
+        },
+        "malignant": {
+          "sensitivity": 0.8292682926829268,
+          "specificity": 0.963963963963964,
+          "ppv": 0.8947368421052632,
+          "npv": 0.9385964912280702,
+          "tp": 34,
+          "fp": 4,
+          "tn": 107,
+          "fn": 7
+        },
+        "normal": {
+          "sensitivity": 1.0,
+          "specificity": 0.9841269841269841,
+          "ppv": 0.9285714285714286,
+          "npv": 1.0,
+          "tp": 26,
+          "fp": 2,
+          "tn": 124,
+          "fn": 0
+        }
+      },
+      "auroc_ovr_macro": 0.9708800086838161,
+      "malignant_auroc": 0.9575917380795429,
+      "malignant_auprc": 0.9142428453138788,
+      "malignant_brier": 0.06144786967560419,
+      "ece": 0.02671837538416148,
+      "brier_multiclass": 0.14531650962089948
+    }
+  }
+}

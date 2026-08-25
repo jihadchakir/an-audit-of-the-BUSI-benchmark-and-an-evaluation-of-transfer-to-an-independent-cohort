@@ -1,0 +1,185 @@
+{
+  "is_ablation": true,
+  "active_defects": [
+    "ground-truth mask fed into the input (CHANGES.md #1)"
+  ],
+  "protocol": {
+    "task": "2class",
+    "splitting": "group",
+    "threshold_selected_on": "val",
+    "gt_mask_in_input": true,
+    "decision_rule": "argmax",
+    "drop_conflicted_groups": true
+  },
+  "per_fold_mean_sd": {
+    "test.balanced_accuracy": {
+      "mean": 0.9927741935483871,
+      "sd": 0.009988547031486019,
+      "min": 0.98,
+      "max": 1.0,
+      "n_folds": 5
+    },
+    "test.accuracy": {
+      "mean": 0.9963132857628271,
+      "sd": 0.005048330714799831,
+      "min": 0.9907407407407407,
+      "max": 1.0,
+      "n_folds": 5
+    },
+    "test.macro_f1": {
+      "mean": 0.9950829621445203,
+      "sd": 0.0067609816646275545,
+      "min": 0.9868373384856901,
+      "max": 1.0,
+      "n_folds": 5
+    },
+    "test.malignant.sensitivity": {
+      "mean": 0.9855483870967742,
+      "sd": 0.019977094062972038,
+      "min": 0.96,
+      "max": 1.0,
+      "n_folds": 5
+    },
+    "test.malignant.specificity": {
+      "mean": 1.0,
+      "sd": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "n_folds": 5
+    },
+    "test.malignant.ppv": {
+      "mean": 1.0,
+      "sd": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "n_folds": 5
+    },
+    "test.coverage": {
+      "mean": 0.8907011623547056,
+      "sd": 0.03214665841990602,
+      "min": 0.8571428571428571,
+      "max": 0.9285714285714286,
+      "n_folds": 5
+    },
+    "test.ece": {
+      "mean": 0.021858653419346764,
+      "sd": 0.005828461115948783,
+      "min": 0.013449081192159741,
+      "max": 0.027727278737480293,
+      "n_folds": 5
+    },
+    "test.auroc": {
+      "mean": 0.9952448199926597,
+      "sd": 0.007059697357967522,
+      "min": 0.9834089619965967,
+      "max": 1.0,
+      "n_folds": 5
+    }
+  },
+  "pooled_out_of_fold": {
+    "n": 631,
+    "coverage": 0.8906497622820919,
+    "n_answered": 562,
+    "accuracy": 0.99644128113879,
+    "balanced_accuracy": 0.9937106918238994,
+    "macro_f1": 0.9955978192755984,
+    "confusion_matrix": [
+      [
+        403,
+        0
+      ],
+      [
+        2,
+        157
+      ]
+    ],
+    "malignant": {
+      "sensitivity": 0.9874213836477987,
+      "specificity": 1.0,
+      "ppv": 1.0,
+      "npv": 0.9950617283950617,
+      "tp": 157,
+      "fp": 0,
+      "tn": 403,
+      "fn": 2
+    },
+    "per_class": {
+      "benign": {
+        "sensitivity": 1.0,
+        "specificity": 0.9874213836477987,
+        "ppv": 0.9950617283950617,
+        "npv": 1.0,
+        "tp": 403,
+        "fp": 2,
+        "tn": 157,
+        "fn": 0
+      },
+      "malignant": {
+        "sensitivity": 0.9874213836477987,
+        "specificity": 1.0,
+        "ppv": 1.0,
+        "npv": 0.9950617283950617,
+        "tp": 157,
+        "fp": 0,
+        "tn": 403,
+        "fn": 2
+      }
+    },
+    "auroc": 0.9939557790329245,
+    "malignant_auroc": 0.9939557790329245,
+    "malignant_auprc": 0.9938476779633826,
+    "malignant_brier": 0.015299199859080697,
+    "ece": 0.016548156146156498,
+    "brier_multiclass": 0.030598399718161393,
+    "ci": {
+      "accuracy": {
+        "point": 0.99644128113879,
+        "lo": 0.9909735007567468,
+        "hi": 1.0,
+        "n_boot": 2000,
+        "unit": "cluster",
+        "n_clusters": 452
+      },
+      "balanced_accuracy": {
+        "point": 0.9937106918238994,
+        "lo": 0.983868349392543,
+        "hi": 1.0,
+        "n_boot": 2000,
+        "unit": "cluster",
+        "n_clusters": 452
+      },
+      "macro_f1": {
+        "point": 0.9955978192755984,
+        "lo": 0.9887250875590894,
+        "hi": 1.0,
+        "n_boot": 2000,
+        "unit": "cluster",
+        "n_clusters": 452
+      },
+      "malignant_sensitivity": {
+        "point": 0.9874213836477987,
+        "lo": 0.967736698785086,
+        "hi": 1.0,
+        "n_boot": 2000,
+        "unit": "cluster",
+        "n_clusters": 452
+      },
+      "malignant_specificity": {
+        "point": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "n_boot": 2000,
+        "unit": "cluster",
+        "n_clusters": 452
+      },
+      "malignant_ppv": {
+        "point": 1.0,
+        "lo": 1.0,
+        "hi": 1.0,
+        "n_boot": 2000,
+        "unit": "cluster",
+        "n_clusters": 452
+      }
+    }
+  }
+}

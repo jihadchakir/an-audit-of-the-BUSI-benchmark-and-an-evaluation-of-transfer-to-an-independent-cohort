@@ -1,0 +1,19 @@
+{
+  "n_conflicted_groups": 8,
+  "n_images_excluded": 18,
+  "fraction_of_dataset": 0.023076923076923078,
+  "class_pair_breakdown": {
+    "benign + malignant": 6,
+    "benign + normal": 2
+  },
+  "groups": [
+    34,
+    66,
+    157,
+    184,
+    253,
+    261,
+    280,
+    284
+  ]
+}

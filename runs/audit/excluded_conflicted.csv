@@ -1,0 +1,19 @@
+path,filename,class_name,label,group
+Dataset_BUSI\benign\benign (131).png,benign (131).png,benign,0,34
+Dataset_BUSI\benign\benign (42).png,benign (42).png,benign,0,34
+Dataset_BUSI\malignant\malignant (51).png,malignant (51).png,malignant,1,34
+Dataset_BUSI\benign\benign (164).png,benign (164).png,benign,0,66
+Dataset_BUSI\benign\benign (85).png,benign (85).png,benign,0,66
+Dataset_BUSI\malignant\malignant (52).png,malignant (52).png,malignant,1,66
+Dataset_BUSI\benign\benign (269).png,benign (269).png,benign,0,157
+Dataset_BUSI\normal\normal (1).png,normal (1).png,normal,2,157
+Dataset_BUSI\benign\benign (333).png,benign (333).png,benign,0,184
+Dataset_BUSI\malignant\malignant (77).png,malignant (77).png,malignant,1,184
+Dataset_BUSI\benign\benign (399).png,benign (399).png,benign,0,253
+Dataset_BUSI\malignant\malignant (93).png,malignant (93).png,malignant,1,253
+Dataset_BUSI\benign\benign (406).png,benign (406).png,benign,0,261
+Dataset_BUSI\malignant\malignant (94).png,malignant (94).png,malignant,1,261
+Dataset_BUSI\benign\benign (433).png,benign (433).png,benign,0,280
+Dataset_BUSI\malignant\malignant (145).png,malignant (145).png,malignant,1,280
+Dataset_BUSI\benign\benign (437).png,benign (437).png,benign,0,284
+Dataset_BUSI\normal\normal (34).png,normal (34).png,normal,2,284

@@ -1,0 +1,16 @@
+# torch/torchvision are NOT listed here on purpose: they must come from the
+# CUDA 12.8 index or they will not have sm_120 (Blackwell / RTX 50xx) kernels.
+#
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+#
+# See README section 1.
+
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+scikit-learn>=1.3
+opencv-python-headless>=4.8
+xgboost>=2.0
+matplotlib>=3.7
+seaborn>=0.13
+pytest>=7.4

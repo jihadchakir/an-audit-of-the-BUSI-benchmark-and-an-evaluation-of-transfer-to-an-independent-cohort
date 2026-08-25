@@ -1,0 +1,68 @@
+{
+  "data": {
+    "root": "./Dataset_BUSI",
+    "task": "2class",
+    "img_size": 256,
+    "use_gt_mask_oracle": true,
+    "duplicate_policy": "group",
+    "phash_hamming_threshold": 6,
+    "drop_conflicted_groups": true,
+    "num_workers": 4
+  },
+  "encoder": {
+    "backbone": "resnet50",
+    "fpn_channels": 256,
+    "embedding_dim": 256,
+    "pretrained": true,
+    "freeze_bn": false,
+    "dropout": 0.3
+  },
+  "train": {
+    "epochs": 60,
+    "p_classes": 3,
+    "k_per_class": 8,
+    "lr": 0.0001,
+    "backbone_lr_mult": 0.1,
+    "weight_decay": 0.0001,
+    "margin": 0.3,
+    "mining": "batch_hard",
+    "warmup_epochs": 3,
+    "patience": 12,
+    "select_metric": "val_balanced_accuracy",
+    "amp_dtype": "bf16",
+    "grad_clip": 1.0
+  },
+  "head": {
+    "members": [
+      "prototype",
+      "xgboost",
+      "random_forest"
+    ],
+    "renormalize_prototypes": true,
+    "calibration": "sigmoid",
+    "calibration_cv": 5,
+    "ensemble": "soft_vote",
+    "rf_n_estimators": 400,
+    "rf_max_depth": null,
+    "xgb_n_estimators": 300,
+    "xgb_max_depth": 4,
+    "xgb_lr": 0.05
+  },
+  "decision": {
+    "rule": "target_sensitivity",
+    "select_on": "test",
+    "target_malignant_sensitivity": 0.95,
+    "enable_abstention": true,
+    "target_coverage": 0.9
+  },
+  "eval": {
+    "n_bootstrap": 2000,
+    "ci_alpha": 0.05,
+    "seed": 1337
+  },
+  "splitting": "random",
+  "n_outer_folds": 5,
+  "inner_val_fraction": 0.2,
+  "seed": 42,
+  "out_dir": ".\\runs\\abl_original"
+}

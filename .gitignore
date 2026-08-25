@@ -1,0 +1,32 @@
+# ---- Raw datasets (not redistributable; download from original sources) ----
+Dataset_BUSI/
+archive/
+
+# ---- Python virtual environment ----
+siamese/
+venv/
+.venv/
+
+# ---- Python caches ----
+__pycache__/
+*.pyc
+*.pyo
+
+# ---- Large model / embedding artifacts (not needed to verify reported numbers) ----
+*.pt
+*.pkl
+**/embeddings.npz
+
+# ---- Manuscript (kept in a separate location) ----
+manuscript/
+
+# ---- Redundant duplicate of heads.py ----
+heads (1).py
+
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# Console log dump
+Windows PowerShell.txt
