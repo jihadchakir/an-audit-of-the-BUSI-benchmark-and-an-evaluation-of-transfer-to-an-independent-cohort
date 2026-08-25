@@ -2,8 +2,6 @@
 # CUDA 12.8 index or they will not have sm_120 (Blackwell / RTX 50xx) kernels.
 #
 #   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
-#
-# See README section 1.
 
 numpy>=1.26
 pandas>=2.0
